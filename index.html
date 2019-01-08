@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Clean Blog - Start Bootstrap Theme</title>
+    <title>Vimate</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,7 +19,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/clean-blog.css" rel="stylesheet">
 
   </head>
 
@@ -36,21 +36,14 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="post.html">Sample Post</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="about.html">Vimate LIST</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+
 
     <!-- Page Header -->
     <header class="masthead" style="background-image: url('img/home-bg.jpg')">
@@ -58,13 +51,16 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="site-heading">
+            <div class="site-heading" id="app">
               <h1>Vimate</h1>
               <h2>
-              <span class="subheading">Welcome to Vimate!</span>
-              <span class="subheading">This is SNS for those who love vim.</span>
-            </h2>
-              <span class="btn btn-primary">Git Hub Login</span>
+                <span class="subheading">Welcome to Vimate!</span>
+                <span class="subheading">This is SNS for those who love vim.</span>
+              </h2>
+              <span class="btn btn-primary" v-on:click="addItem">
+                <img src="./img/github.png">
+              Git Hub Login</span>
+
             </div>
           </div>
         </div>
@@ -76,61 +72,32 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-preview">
-            <a href="post.html">
+            <a href="index.html">
               <h2 class="post-title">
-                Man must explore, and this is exploration at its greatest
+               Vimateとは？
               </h2>
-              <h3 class="post-subtitle">
-                Problems look mighty small from 150 miles up
-              </h3>
-            </a>
-            <p class="post-meta">Posted by
-              <a href="#">Start Bootstrap</a>
-              on September 24, 2018</p>
+               </a>
+              <p class="post-meta">
+                VimateはVimを愛する人たちのためのSNSです。<br>
+                自分のVimrcを共有したり、いろんな人のVimrcに対してコメントやお気に入り登録をしてVimrcを愛でましょう。
+              </p>
+
           </div>
           <hr>
           <div class="post-preview">
-            <a href="post.html">
+            <a href="index.html">
               <h2 class="post-title">
-                I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+                GitHubアカウントで登録しましょう！
               </h2>
             </a>
-            <p class="post-meta">Posted by
-              <a href="#">Start Bootstrap</a>
-              on September 18, 2018</p>
+            <p class="post-meta">まずはGitHubのアカウントで会員登録しましょう！<br>
+              登録していただくと、ご自身のVimrcも投稿することができます。<br>
+            登録はしなくても見ることは可能です。</p>
           </div>
-          <hr>
-          <div class="post-preview">
-            <a href="post.html">
-              <h2 class="post-title">
-                Science has not yet mastered prophecy
-              </h2>
-              <h3 class="post-subtitle">
-                We predict too much for the next year and yet far too little for the next ten.
-              </h3>
-            </a>
-            <p class="post-meta">Posted by
-              <a href="#">Start Bootstrap</a>
-              on August 24, 2018</p>
-          </div>
-          <hr>
-          <div class="post-preview">
-            <a href="post.html">
-              <h2 class="post-title">
-                Failure is not an option
-              </h2>
-              <h3 class="post-subtitle">
-                Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-              </h3>
-            </a>
-            <p class="post-meta">Posted by
-              <a href="#">Start Bootstrap</a>
-              on July 8, 2018</p>
-          </div>
-          <hr>
+
           <!-- Pager -->
           <div class="clearfix">
-            <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+            <a class="btn btn-primary float-right" href="#">ログインせずVimateを見に行く</a>
           </div>
         </div>
       </div>
@@ -169,7 +136,7 @@
                 </a>
               </li>
             </ul>
-            <p class="copyright text-muted">Copyright &copy; Your Website 2018</p>
+            <p class="copyright text-muted">Copyright Vimate 2019</p>
           </div>
         </div>
       </div>
@@ -181,6 +148,8 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/clean-blog.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+    <script src="index.js"></script>
 
   </body>
 
