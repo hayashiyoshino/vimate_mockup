@@ -29,10 +29,6 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand" href="index.html">Vimate Top</a>
-        <form>
-          <input type="text" name="keyword" placeholder=" Vimate検索">
-          <button>検索</button>
-        </form>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -40,7 +36,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="mypage.html">My Page</a>
+              <a class="nav-link" href="about.html">Vimate LIST</a>
             </li>
           </ul>
         </div>
@@ -48,14 +44,14 @@
     </nav>
 
     <!-- Page Header -->
-    <!-- <header class="masthead" style="background-image: url('img/about-bg.jpg')"> -->
-      <header class="masthead" style="background-color: black;">
+    <header class="masthead" style="background-image: url('http://bootstrap3.cyberlab.info/img/sample-256x256.png')">
+    <!--   <header class="masthead" style="background-color: black;"> -->
         <div class="overlay"></div>
         <div class="container">
           <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
               <div class="page-heading">
-                <h1>Vimate List</h1>
+                <!-- <h1>Vimate List</h1> -->
                 <span class="subheading">This is Vimrc and discription.</span>
               </div>
             </div>
@@ -63,44 +59,30 @@
         </div>
       </header>
 
+<div class="col-xs-6 col-md-3">
+    <div class="thumbnail">
+      <img src="http://bootstrap3.cyberlab.info/img/sample-256x256.png">
+      <div class="caption" id="app">
+        <h3>GitHubのユーザー名</h3>
+        <p>Vimrc紹介文</p>
+        <p>...</p>
+        <p>
+          <span class="btn btn-primary" v-on:click="addVimrc">Vimrcアップロード</span>
+              <!-- <a href="http://bootstrap3.cyberlab.info/img/sample-256x256.png" class="btn btn-default" role="button" target="_blank">bimrcアップロード</a> --></p>
+      </div>
+    </div>
+  </div>
+
       <!-- Main Content -->
-
       <div class="container">
-
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="vimrc_description">
-              <div class="cardpanel">
-              </div>
-              説明
-              <div class="vimrc_description">
-                <div class="cardpanel">
-                </div>
-                説明
-              </div>
-              <div class="vimrc_description">
-                <div class="cardpanel">
-                </div>
-                説明
-              </div>
-              <div class="vimrc_description">
-                <div class="cardpanel">
-                </div>
-                説明
-              </div>
-              <div class="vimrc_description">
-                <div class="cardpanel">
-                </div>
-                説明
-              </div>
-              <div class="vimrc_description">
-                <div class="cardpanel">
-                </div>
-                説明
-              </div>
-            </div>
+
+
+          </div>
           </div>
         </div>
+      </div>
 
       <hr>
 
@@ -147,6 +129,9 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/clean-blog.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+    <script src="index.js"></script>
+
 
   </body>
 
