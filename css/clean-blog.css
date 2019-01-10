@@ -425,7 +425,7 @@ footer .copyright {
   font-size: 14px;
   border: solid 1px;
   border-radius: 1px;
-  background-color: dimgray;
+  background-color: silver;
   margin : 20px;
   display: inline-block;
 }
@@ -435,7 +435,6 @@ footer .copyright {
   height: 200px;
   border: solid 1px;
   border-radius: 1px;
-  background-color: dimgray;
   background-image: url("https://camo.githubusercontent.com/3d5827eb3cf979730059aaa6e7117ae1de25a818/687474703a2f2f692e696d6775722e636f6d2f524a377866446d2e706e67");
   background-size: cover;
   display: inline-block;
