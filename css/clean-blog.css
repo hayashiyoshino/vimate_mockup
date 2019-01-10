@@ -422,17 +422,28 @@ footer .copyright {
 .cardpanel {
   width: 230px;
   height: 300px;
+  font-size: 14px;
   border: solid 1px;
-  border-radius: 10px;
+  border-radius: 1px;
   background-color: dimgray;
-  margin : 10px;
+  margin : 20px;
   display: inline-block;
 }
 
-.vimrc_description {
-  color :white;
-  min-width :600px;
+.vimrc-img {
+  width: 230px;
+  height: 200px;
+  border: solid 1px;
+  border-radius: 1px;
+  background-color: dimgray;
+  background-image: url("https://camo.githubusercontent.com/3d5827eb3cf979730059aaa6e7117ae1de25a818/687474703a2f2f692e696d6775722e636f6d2f524a377866446d2e706e67");
+  background-size: cover;
+  display: inline-block;
 }
+
+
+
+
 
 .discriptipn {
   display: inline-block;
@@ -453,6 +464,19 @@ footer .copyright {
     transition: border .2s ease-in-out;
 }
 
+.flex-container {
+  flex-direction: row;
+}
 
+.search-box {
+  border-radius: 10px;
+  font-size: 14px;
+  width: 230px;
+}
+
+.search-button {
+  border-radius: 10px;
+  font-size: 14px;
+}
 
 
