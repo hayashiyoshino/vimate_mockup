@@ -26,3 +26,15 @@ Vimate is an sns for love vim.
 ### Association
 
 - belongs_to :user
+
+## likes table
+
+| Column   | Type    | Options     |
+| -------- | ------- | ----------- |
+| vimrc_id | integer | null: false |
+| user_id  | text    | null: false |
+
+### Association
+
+- belongs_to :vimrc
+- belongs_to :user
